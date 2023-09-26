@@ -1,8 +1,8 @@
 import {defineConfig, isDev} from 'sanity';
 import {visionTool} from '@sanity/vision';
 import {deskTool} from 'sanity/desk'
-import {schemaTypes} from './sanity-ecommerce/schemas'
-import {getStartedPlugin} from './sanity-ecommerce/plugins/sanity-plugin-tutorial'
+import {schemaTypes} from './schemas'
+import {getStartedPlugin} from './plugins/sanity-plugin-tutorial'
 
 const devOnlyPlugins = [getStartedPlugin()]
 

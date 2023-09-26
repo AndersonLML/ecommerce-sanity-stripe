@@ -42,18 +42,22 @@ export default {
       type: 'string',
     },
     {
-      name: 'largeText2',
-      title: 'LargeText2',
-      type: 'string',
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug', // sanity has a slug type that generates a slug
+      options: {
+        source: 'name', // this is the field that the slug is generated from
+        maxLength: 96,
+      },
     },
     {
-      name: 'discount',
-      title: 'Discount',
-      type: 'string',
+      name: 'price',
+      title: 'Price',
+      type: 'number',
     },
     {
-      name: 'saleTime',
-      title: 'SaleTime',
+      name: 'details',
+      title: 'Details',
       type: 'string',
     },
   ],

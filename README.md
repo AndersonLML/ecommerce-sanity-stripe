@@ -363,13 +363,13 @@ export default async function handler(req, res) {
             .replace(
               'image-',
               // NOTE: use sanity project id in the url
-              'https://cdn.sanity.io/images/eglqvky8/production/'
+              'https://cdn.sanity.io/images/h1g7r4lc/production/'
             )
             .replace('-webp', '.webp') // NOTE: put .jpg or .png if you don't use webp images
 
           return {
             price_data: {
-              currency: 'eur',
+              currency: 'brl',
               product_data: {
                 name: item.name,
                 images: [newImage],

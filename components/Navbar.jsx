@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <div className='navbar-container'>
       <p className='logo'>
-        <Link href='/'>Ecommerce</Link>
+        <Link href='/'>SystemTec Loja Online</Link>
       </p>
 
       <button

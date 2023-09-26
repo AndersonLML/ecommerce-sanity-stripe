@@ -12,8 +12,8 @@ export default function Home({ products, bannerData }) {
       />
 
       <div className='products-heading'>
-        <h2>Best Selling Products</h2>
-        <p>Speakers of many variations</p>
+        <h2>Produtos Mais Vendidos</h2>
+        <p>Produtos Físicos e Softwares</p>
       </div>
       <div className='products-container'>
         {products?.map((product) => (

@@ -21,9 +21,10 @@ export default async function handler(req, res) {
         // @link https://dashboard.stripe.com/test/shipping-rates
         shipping_options: [
           // FREE SHIPPING
-          { shipping_rate: 'shr_1NuDozICE2vmDpGbgvuODPVB' },
+          { shipping_rate: 'shr_1NuHciICE2vmDpGbGQBa9j50' },
         ],
 
+       
         line_items: req.body.map((item) => {
           // access sanity image
           // @link https://www.sanity.io/manage
@@ -58,7 +59,7 @@ export default async function handler(req, res) {
         // ? REDIRECT URLS when stripe checkout is successful or canceled
         success_url: `${req.headers.origin}/success`,
         cancel_url: `${req.headers.origin}/canceled`,
-        automatic_tax: { enabled: true },
+        automatic_tax: { enabled: false },
       }
 
       // Create Checkout Sessions from body params.

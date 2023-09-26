@@ -28,17 +28,17 @@ export default function Success() {
           <BsBagCheckFill />
         </p>
 
-        <h2>Thank you for your order</h2>
-        <p className='email-msg'>Check your email inbox for the receipt.</p>
+        <h2>Obrigado pela compra</h2>
+        <p className='email-msg'>Verifique sua caixa de entrada de e-mail para obter o recibo.</p>
         <p className='description'>
-          If you have any questions, please email
-          <a className='email' href='mailto:info@emanuelefavero.com'>
-            info@emanuelefavero.com
+        Se você tiver alguma dúvida, envie um e-mail
+          <a className='email' href='mailto:gtlt1999@gmail.com'>
+          gtlt1999@gmail.com
           </a>
         </p>
         <Link href='/'>
           <button type='button' width='300px' className='btn'>
-            Continue Shopping
+            Continue Comprando
           </button>
         </Link>
       </div>
