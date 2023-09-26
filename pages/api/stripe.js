@@ -21,7 +21,9 @@ export default async function handler(req, res) {
         // @link https://dashboard.stripe.com/test/shipping-rates
         shipping_options: [
           // FREE SHIPPING
+
           { shipping_rate: 'shr_1NuUYkICE2vmDpGbjZX3doo3' },
+
         ],
 
        
