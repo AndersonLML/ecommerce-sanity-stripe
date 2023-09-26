@@ -74,7 +74,7 @@ export default function ProductDetail({ product, products }) {
           </div>
           <h4>Detalhes: </h4>
           <p>{details}</p>
-          <p className='price'>${price}</p>
+          <p className='price'>R${price}</p>
           <div className='quantity'>
             <h3>Quantidade:</h3>
             <p className='quantity-desc'>
@@ -106,7 +106,7 @@ export default function ProductDetail({ product, products }) {
 
       {/* "You may also like" section - marquee of images */}
       <div className='maylike-products-wrapper'>
-        <h2>You may also like</h2>
+        <h2>Você pode gostar</h2>
 
         {/* TODO: Add a marquee react library for infinite scrolling */}
         <div className='marquee'>

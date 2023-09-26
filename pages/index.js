@@ -14,6 +14,7 @@ export default function Home({ products, bannerData }) {
       <div className='products-heading'>
         <h2>Produtos Mais Vendidos</h2>
         <p>Produtos Físicos e Softwares</p>
+        <p>Chame no WhatsApp e confira se ainda tem em Estoque antes de Comprar</p>
       </div>
       <div className='products-container'>
         {products?.map((product) => (

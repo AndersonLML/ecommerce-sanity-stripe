@@ -41,7 +41,7 @@ export default function Cart() {
 
     const data = await response.json()
 
-    toast.loading('Redirecting to checkout...')
+    toast.loading('Redirecionando para finalização da compra...')
 
     stripe.redirectToCheckout({ sessionId: data.id })
   }
@@ -57,7 +57,7 @@ export default function Cart() {
             onClick={() => setShowCart(false)}
           >
             <AiOutlineLeft />
-            <span className='heading'>Your Cart</span>
+            <span className='heading'>Seu Carrinho</span>
             <span className='cart-num-items'>({totalQuantities} items)</span>
           </button>
 
@@ -65,14 +65,14 @@ export default function Cart() {
           {cartItems.length < 1 && (
             <div className='empty-cart'>
               <AiOutlineShopping size={150} />
-              <h3>Your shopping bag is empty</h3>
+              <h3>O seu saco de compras está vazio</h3>
               <Link href='/'>
                 <button
                   type='button'
                   onClick={() => setShowCart(false)}
                   className='btn'
                 >
-                  Continue Shopping
+                  Continue Comprando
                 </button>
               </Link>
             </div>
@@ -91,7 +91,7 @@ export default function Cart() {
                   <div className='item-desc'>
                     <div className='flex top'>
                       <h5>{item.name}</h5>
-                      <h4>${item.price}</h4>
+                      <h4>R${item.price}</h4>
                     </div>
                     <div className='flex bottom'>
                       <div>
@@ -131,12 +131,12 @@ export default function Cart() {
             <div className='cart-bottom'>
               <div className='total'>
                 <h3>Subtotal</h3>
-                <h3>${totalPrice}</h3>
+                <h3>R${totalPrice}</h3>
               </div>
               <div className='btn-container'>
                 {/* STRIPE CHECKOUT BUTTON */}
                 <button type='button' className='btn' onClick={handleCheckout}>
-                  Pay with Stripe
+                  Fazer Pagamento
                 </button>
               </div>
             </div>
