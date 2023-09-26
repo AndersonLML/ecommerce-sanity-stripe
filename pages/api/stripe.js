@@ -21,7 +21,7 @@ export default async function handler(req, res) {
         // @link https://dashboard.stripe.com/test/shipping-rates
         shipping_options: [
           // FREE SHIPPING
-          { shipping_rate: 'shr_1NuHciICE2vmDpGbGQBa9j50' },
+          { shipping_rate: 'shr_1NuQ63ICE2vmDpGbu6JP2RVO' },
         ],
 
        
@@ -39,7 +39,7 @@ export default async function handler(req, res) {
 
           return {
             price_data: {
-              currency: 'eur',
+              currency: 'brl',
               product_data: {
                 name: item.name,
                 images: [newImage],
