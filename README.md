@@ -348,7 +348,7 @@ export default async function handler(req, res) {
         payment_method_types: ['card'],
         billing_address_collection: 'auto',
 
-        // Shipping options - create them in the Stripe dashboard and copy the IDs here
+        // Shipping options - create them in the Stripe dashboard and copy the IDs hereabcdefghijklmnopq
         // @link https://dashboard.stripe.com/test/shipping-rates
         shipping_options: [
           // FREE SHIPPING
