@@ -23,6 +23,7 @@ a {
 }
 .layout {
   padding: 10px;
+  width: 95%
 }
 
 .navbar-container {
@@ -41,7 +42,7 @@ a {
 .marquee {
   position: relative;
   height: 400px;
-  width: 100%;
+  width: 95%;
   overflow-x: hidden;
 }
 
@@ -275,7 +276,7 @@ span.text-red {
   transition: all 1s ease-in-out;
 }
 .cart-container {
-  height: 100vh;
+  height: 100%;
   width: 600px;
   background-color: white;
   float: right;
@@ -342,8 +343,8 @@ span.text-red {
   padding: 20px;
 }
 .product .cart-product-image {
-  width: 180px;
-  height: 150px;
+  width: 80%;
+  height: 95%;
   border-radius: 15px;
   background-color: #ebebeb;
 }
@@ -689,8 +690,8 @@ span.text-red {
     padding: 20px 5px;
   }
   .product .cart-product-image {
-    width: 25%;
-    height: 25%;
+    width: 15%;
+    height: 15%;
   }
   .buttons .add-to-cart {
     width: 150px;

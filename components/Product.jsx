@@ -19,7 +19,7 @@ export default function Product({ product: { image, name, slug, price } }) {
             height={250}
           />
           <p className='product-name'>{name}</p>
-          <p className='product-price'>{price}R$</p>
+          <p className='product-price'>{price} R$</p>
         </div>
       </Link>
     </div>
